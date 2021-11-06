@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="593.0" prefWidth="684.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="fxmlapplicationpkg.ArtGalleryController">
+   <children>
+      <ImageView fitHeight="173.0" fitWidth="143.0" layoutX="54.0" layoutY="24.0" onMouseClicked="#womanButtonOnClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@MuseumArtPhotos/1522920295601845-velata-gal.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="label1" layoutX="54.0" layoutY="213.0" prefHeight="53.0" prefWidth="117.0" />
+      <ImageView fitHeight="164.0" fitWidth="135.0" layoutX="257.0" layoutY="24.0" onMouseClicked="#manButtonOnClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@MuseumArtPhotos/1562663512370893-IMG_4362.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="label2" layoutX="244.0" layoutY="213.0" prefHeight="53.0" prefWidth="135.0" />
+      <ImageView fitHeight="164.0" fitWidth="197.0" layoutX="448.0" layoutY="28.0" onMouseClicked="#bladeButtonOnClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@MuseumArtPhotos/1548162380030855-1.arrotino.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="label3" layoutX="448.0" layoutY="213.0" prefHeight="66.0" prefWidth="221.0" />
+      <Label layoutX="221.0" layoutY="398.0" prefHeight="76.0" prefWidth="242.0" text="Click on Images to see Title and Date" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

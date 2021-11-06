@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="fxmlapplicationpkg.CuratorUIController">
+   <children>
+      <Button layoutX="215.0" layoutY="41.0" mnemonicParsing="false" onAction="#viewMeetingOnClick" prefHeight="39.0" prefWidth="171.0" style="-fx-background-color: black;" text="View Meeting Schedule" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="230.0" layoutY="110.0" mnemonicParsing="false" onAction="#complainButtonOnClick" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: black;" text="Complain" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="curatorNamelbl" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="91.0" />
+      <Button layoutX="204.0" layoutY="181.0" mnemonicParsing="false" onAction="#createEventsOnClick" prefHeight="39.0" prefWidth="192.0" style="-fx-background-color: black;" text="Create Event and Activities" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

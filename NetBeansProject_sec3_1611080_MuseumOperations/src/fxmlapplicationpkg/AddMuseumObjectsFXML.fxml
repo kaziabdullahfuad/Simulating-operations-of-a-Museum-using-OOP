@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="601.0" prefWidth="818.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="fxmlapplicationpkg.AddMuseumObjectsFXMLController">
+   <children>
+      <TableView fx:id="tableView" layoutX="25.0" layoutY="324.0" prefHeight="269.0" prefWidth="770.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="123.0" text="Object Name" />
+          <TableColumn fx:id="idcolumn" prefWidth="116.0" text="Unique ID" />
+            <TableColumn fx:id="dateColumn" prefWidth="141.0" text="Date Added" />
+            <TableColumn fx:id="categoryColumn" prefWidth="176.0" text="Category" />
+            <TableColumn fx:id="storageColumn" prefWidth="172.0" text="Storage" />
+        </columns>
+      </TableView>
+      <Label layoutX="81.0" layoutY="31.0" prefHeight="44.0" prefWidth="121.0" text="Enter Object Name" />
+      <Label layoutX="81.0" layoutY="93.0" prefHeight="44.0" prefWidth="121.0" text="Enter Object ID" />
+      <Label layoutX="81.0" layoutY="165.0" prefHeight="44.0" prefWidth="121.0" text="Enter Date Added" />
+      <TextField fx:id="objectName" layoutX="202.0" layoutY="41.0" />
+      <TextField fx:id="objectID" layoutX="202.0" layoutY="103.0" />
+      <Label layoutX="382.0" layoutY="44.0" prefHeight="44.0" prefWidth="121.0" text="Enter Category" />
+      <TextField fx:id="category" layoutX="503.0" layoutY="54.0" />
+      <Label layoutX="382.0" layoutY="106.0" prefHeight="44.0" prefWidth="121.0" text="Enter Storage" />
+      <TextField fx:id="storage" layoutX="503.0" layoutY="116.0" />
+      <DatePicker fx:id="dateAdded" layoutX="184.0" layoutY="175.0" />
+      <Button layoutX="123.0" layoutY="247.0" mnemonicParsing="false" onAction="#museumObjectOnClick" prefHeight="44.0" prefWidth="218.0" text="Add Museum Object to Bin File" />
+      <Button layoutX="400.0" layoutY="247.0" mnemonicParsing="false" onAction="#loadObjectonClick" prefHeight="44.0" prefWidth="218.0" text="Load From Museum Object" />
+   </children>
+</AnchorPane>
